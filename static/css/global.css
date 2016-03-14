@@ -25,6 +25,11 @@ body {
 #container-inner {
     padding: 20px;
 }
+#container-inner::after {
+    content: " ";
+    display: block;
+    height: 100%;
+}
 #content-border {
     padding: 20px;
     height: auto;
