@@ -17,13 +17,13 @@ body {
     background-image: url("/static/img/letters-1024.jpg");
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: auto;
 }
 #container-outter {
-    width: 1024px;
+    /*width: 768px;*/
+    min-width: 200px;
+    max-width: 768px;
     margin: 0 auto;
-}
-#container-inner {
-    padding: 20px;
 }
 #container-inner::after {
     content: " ";
@@ -34,7 +34,6 @@ body {
     padding: 20px;
     height: auto;
     width: auto;
-    overflow: scroll;
     opacity: 0.95;
     color: #839496;
 }
@@ -50,9 +49,35 @@ body {
     border-bottom: 1px solid #839496;
 }
 #content {
-
+    position: relative;
 }
 ol,
 ul {
     padding: 20px;
+}
+blockquote {
+    margin-left: 20px;
+    text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+    .fixed-bg {
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 500px) {
+    #container-inner {
+        padding: 20px;
+    }
+    blockquote {
+        max-width: 60%;
+    }
+    .top {
+        float: right;
+    }
+    .bottom {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
