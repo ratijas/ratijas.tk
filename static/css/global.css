@@ -41,6 +41,13 @@ body {
     background-color: #073642;
     color: #839496;
 }
+.solorized hr {
+    border-bottom: 1px solid #839496;
+}
 #content {
 
+}
+ol,
+ul {
+    padding: 20px;
 }
