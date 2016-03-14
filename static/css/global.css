@@ -64,6 +64,9 @@ blockquote {
     .fixed-bg {
         background-size: cover;
     }
+    blockquote br:not(:last-child) {
+        display: none;
+    }
 }
 @media screen and (min-width: 500px) {
     #container-inner {
