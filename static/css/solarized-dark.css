@@ -229,19 +229,19 @@ h5 {
 h6 {
   font-size: 1.15em;
 }
-.tag {
+.TAG {
   background-color: #073642;
   color: #d33682;
   padding: 0 0.2em;
 }
-.todo,
-.next,
-.done {
+.TODO,
+.NEXT,
+.DONE {
   color: #002b36;
   background-color: #dc322f;
   padding: 0 0.2em;
 }
-.tag {
+.TAG {
   -webkit-border-radius: 0.35em;
   -moz-border-radius: 0.35em;
   border-radius: 0.35em;
