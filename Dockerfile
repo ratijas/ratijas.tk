@@ -1,5 +1,6 @@
 FROM nginx
 
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY html /usr/share/nginx/html
+COPY etc/nginx /etc/nginx
 
-VOLUME /usr/share/nginx/html
+VOLUME /usr/share/nginx/html/docs
