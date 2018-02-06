@@ -4,6 +4,7 @@ services:
   nginx:
     image: ratijas/ratijas_tk
     build: .
+    restart: always
 
     volumes:
      - "./docs:/usr/share/nginx/html/docs:ro"
