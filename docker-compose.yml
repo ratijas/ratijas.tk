@@ -10,4 +10,4 @@ services:
      - "./docs:/usr/share/nginx/html/docs:ro"
 
     ports:
-     - "80:80"
+     - "9080:80"
