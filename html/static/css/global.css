@@ -58,6 +58,12 @@ ol,
 ul {
     padding: 20px;
 }
+/* any nested <ul> */
+ol ul, ul ul {
+    padding-top: 0;
+    padding-bottom: 0;
+    list-style-type: cambodian;
+}
 blockquote {
     margin-left: 20px;
     text-align: right;
